@@ -55,27 +55,23 @@
                 </select>
               </label>
             </p>
-
-            <br />
-            <h4>Custom filters and views</h4>
-            <p>Take a look at the <a href='https://github.com/derekeder/FusionTable-Map-Template/wiki/Filter-examples'>wiki</a> to see how to add your own custom filters and views like:</p>
-            <div class='row'>
-              <div class='col-md-6'>
-                <ul>
-                  <li><a href='https://github.com/derekeder/FusionTable-Map-Template/wiki/Filter-examples#wiki-checkboxes'>Checkboxes</a></li>
-                  <li><a href='https://github.com/derekeder/FusionTable-Map-Template/wiki/Filter-examples#wiki-radiobuttons'>Radio buttons</a></li>
-                  <li><a href='https://github.com/derekeder/FusionTable-Map-Template/wiki/Filter-examples#wiki-drop-down-lists'>Drop down lists</a></li>
-                  <li><a href='https://github.com/derekeder/FusionTable-Map-Template/wiki/Filter-examples#wiki-textsearches'>Text searches</a></li>
-                </ul>
-              </div>
-              <div class='col-md-6'>
-                <ul>
-                  <li><a href='https://github.com/derekeder/FusionTable-Map-Template/wiki/Filter-examples#wiki-sliders'>Sliders</a></li>
-                  <li><a href='https://github.com/derekeder/FusionTable-Map-Template/wiki/Filter-examples#wiki-date-sliders'>Date sliders</a></li>
-                  <li><a href='https://github.com/derekeder/FusionTable-Map-Template/wiki/List-search-results'>Results lists</a></li>
-                </ul>
-              </div>
-            </div>
+            <h4>
+              Recycling services
+            </h4>
+            <ul class='inputs-list unstyled'>
+              <li>
+                <label class='checkbox inline'>
+                  <input type='checkbox' id='cbType1'/>
+                  <span class="filter-box filter-blue'></span>
+                               City drop-off location
+                               </label>
+                               </li>
+                               <li>
+                               <label class='checkbox inline'>
+                               <input type='checkbox' id='cbType2'/>
+                               <span class='filter-box filter-green'></span>
+                               
+            
             <br />
             <a class='btn btn-primary' id='search' href='#'>
               <i class='glyphicon glyphicon-search'></i>
@@ -119,11 +115,11 @@
         
         $(function() {
           var myMap = new MapsLib({
-            fusionTableId:      "1m4Ez9xyTGfY2CU6O-UgEcPzlS0rnzLU93e4Faa0",
-            googleApiKey:       "AIzaSyAjYIJDSpRo90YUDZNtLnSCTmuMHfLMAlo",
+            fusionTableId:      "15pKRpg6Dn8YepquakDPyi5VBMmNOpZqgzB2Vnahn",
+            googleApiKey:       "AIzaSyAm1Olt0yKODZJIt2M9OpMXUpBJ0h3d6pc",
             locationColumn:     "geometry",
-            map_center:         [41.8781136, -87.66677856445312],
-            locationScope:      "chicago"
+            map_center:         [-7.33779593448943, 110.51562405659172],
+            locationScope:      "salatiga"
           });
 
           var autocomplete = new google.maps.places.Autocomplete(document.getElementById('search_address'));
@@ -166,3 +162,7 @@
     </script>
   </body>
 </html>
+
+
+
+
